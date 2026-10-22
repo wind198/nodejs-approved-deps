@@ -1,0 +1,25 @@
+name: Validate policy
+
+on:
+  pull_request:
+  push:
+    branches:
+      - node-24
+      - node-26
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Validate manifest and policy
+        run: npm run validate
+
+      - name: Generator fixtures
+        run: npm run test:generator

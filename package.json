@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-approved-deps",
+  "private": true,
+  "type": "module",
+  "description": "Central approved dependency manifests and merge tooling (not an application allowlist)",
+  "scripts": {
+    "validate": "node scripts/validate-policy.mjs",
+    "test:generator": "node scripts/test-generator.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

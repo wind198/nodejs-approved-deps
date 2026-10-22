@@ -1,0 +1,9 @@
+{
+  "policyVersion": 1,
+  "runtime": "node-24",
+  "requireExactVersions": true,
+  "failOnHighOrCriticalVulnerabilities": true,
+  "requireLockfile": true,
+  "requireSecurityReview": true,
+  "dependencyOwnershipMode": "strict"
+}

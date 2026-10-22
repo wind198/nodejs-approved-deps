@@ -1,0 +1,13 @@
+{
+  "name": "my-nextjs-app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "15.0.0"
+  }
+}
